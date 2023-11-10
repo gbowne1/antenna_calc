@@ -1,0 +1,68 @@
+{
+	"[c]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+		"editor.formatOnSave": true
+	},
+	"C_Cpp.autoAddFileAssociations": true,
+	"C_Cpp.autocompleteAddParentheses": true,
+	"C_Cpp.clang_format_sortIncludes": true,
+	"C_Cpp.codeAnalysis.clangTidy.enabled": true,
+	"C_Cpp.configurationWarnings": "enabled",
+	"C_Cpp.default.browse.limitSymbolsToIncludedHeaders": false,
+	"C_Cpp.default.cStandard": "c11",
+	"C_Cpp.default.compilerPath": "/usr/bin/",
+	"C_Cpp.default.cppStandard": "c++11",
+	"C_Cpp.formatting": "default",
+	"C_Cpp_Runner.cCompilerPath": "/usr/bin/",
+	"C_Cpp_Runner.cppCompilerPath": "/usr/bin/",
+	"C_Cpp_Runner.cStandard": "c11",
+	"C_Cpp_Runner.cppStandard": "c++11",
+	"C_Cpp_Runner.debuggerPath": "/usr/bin/",
+	"C_Cpp_Runner.enableWarnings": true,
+	"C_Cpp_Runner.excludeSearch": [],
+	"C_Cpp_Runner.includePaths": [],
+	"C_Cpp_Runner.includeSearch": [],
+	"C_Cpp_Runner.linkerArgs": [],
+	"C_Cpp_Runner.msvcBatchPath": "",
+	"C_Cpp_Runner.useAddressSanitizer": false,
+	"C_Cpp_Runner.useMsvc": false,
+	"C_Cpp_Runner.warnings": [
+		"-Wall",
+		"-Wextra",
+		"-Wpedantic",
+		"-Werror"
+	],
+	"C_Cpp_Runner.warningsAsError": false,
+	"cmake.autoSelectActiveFolder": false,
+	"cmake.configureOnEdit": false,
+	"cmake.configureOnOpen": false,
+	"cmake.sourceDirectory": "${workspaceFolder}",
+	"files.associations": {
+		"*.c": "C",
+		"*.cpp": "cpp",
+		"*.h": "C",
+		"*.hpp": "cpp"
+	},
+	"workbench.editorAssociations": {
+		"*.c": "default",
+		"*.cpp": "default",
+		"*.h": "default",
+		"*.hpp": "default"
+	},
+	"C_Cpp.loggingLevel": "Error",
+	"C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+	"C_Cpp.default.includePath": [
+		"${workspaceFolder}/**",
+		"${workspaceFolder}/StarshipAscension/include"
+	],
+	"C_Cpp.default.defines": [],
+	"C_Cpp.default.compileCommands": "build/compile_commands.json",
+	"C_Cpp.default.browse.path": [
+		"${workspaceFolder}/src/include"
+	],
+	"C_Cpp.default.browse.databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+	"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}

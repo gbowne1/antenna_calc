@@ -1,0 +1,36 @@
+{
+	"env": {
+		"myDefaultIncludePath": [
+			"${workspaceFolder}/StarshipAscension/include"
+		],
+		"myCompilerPath": "/usr/bin/gcc"
+	},
+	"configurations": [
+		{
+			"name": "Linux",
+			"intelliSenseMode": "linux-gcc-x64",
+			"includePath": [
+				"${workspaceFolder}/**"
+			],
+			"defines": [],
+			"compilerPath": "/usr/bin/gcc-8",
+			"cStandard": "c11",
+			"cppStandard": "c++11",
+			"compileCommands": "build/compile_commands.json",
+			"browse": {
+				"path": [
+					"${workspaceFolder}/src",
+					"${workspaceFolder}/include",
+					"${workspaceFolder}/**",
+					"/usr/local/include",
+					"/usr/include/x86_64-linux-gnu",
+					"/usr/include"
+				],
+				"limitSymbolsToIncludedHeaders": true,
+				"databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db"
+			},
+			"configurationProvider": "ms-vscode.cmake-tools"
+		}
+	],
+	"version": 4
+}
