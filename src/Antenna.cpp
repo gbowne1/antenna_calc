@@ -25,7 +25,6 @@
 #include <cstddef>
 #include <cmath>
 #include <vector>
-#include <strstream>
 #include <algorithm>
 #include <iterator>
 
@@ -35,8 +34,8 @@
 #include "../include/Frequency.h"
 #include "../include/Wavelength.h"
 
-Antenna::Antenna(double frequency) {
-
+Antenna::Antenna(double frequency) : frequency(frequency) {
+    // Constructor implementation
 }
 
 Wavelength::Wavelength
@@ -50,5 +49,5 @@ Spectrum::Spectrum() {
 Band::Band
 
 double Antenna::getLength() {
-    return m_length;
+    return 3.0; // Example length, replace with your actual formula or logic
 }

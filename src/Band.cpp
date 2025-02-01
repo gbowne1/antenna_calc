@@ -25,7 +25,6 @@
 #include <cstddef>
 #include <cmath>
 #include <vector>
-#include <strstream>
 #include <algorithm>
 #include <iterator>
 
@@ -35,13 +34,13 @@
 #include "../include/Frequency.h"
 #include "../include/Wavelength.h"
 
-Band::Band(int value) {
-    m_value = value;
-}
-int Band::getValue() {
-    return m_value;
+Band::Band(const std::string& name) : name(name) {}
+
+std::pair<double, double> Band::getFrequencyRange() const {
+    // Return frequency range for the band
+    return { 1.0e6, 30.0e6 }; // Example range
 }
 
-int Band::getValue() {
-
+std::string Band::getName() const {
+    return name;
 }

@@ -35,13 +35,8 @@
 #include "../include/Frequency.h"
 #include "../include/Wavelength.h"
 
-Wavelength::Wavelength(int value) {
+Wavelength::Wavelength(double value) : value(value) {}
 
-}
-int Wavelength::getValue() {
-
-}
-
-int Wavelength::setValue() {
-
+double Wavelength::getWavelength() const {
+    return value;
 }

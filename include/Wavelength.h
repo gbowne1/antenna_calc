@@ -1,12 +1,12 @@
 #ifndef WAVELENGTH_H
 #define WAVELENGTH_H
 
-class WAVELENGTH
-	{
-
-		public:
-		private:
-
-	};
+class Wavelength {
+public:
+    Wavelength(double value);
+    double getWavelength() const;
+private:
+    double value;
+};
 
 #endif

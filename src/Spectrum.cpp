@@ -25,7 +25,6 @@
 #include <cstddef>
 #include <cmath>
 #include <vector>
-#include <strstream>
 #include <algorithm>
 #include <iterator>
 
@@ -35,14 +34,12 @@
 #include "../include/Frequency.h"
 #include "../include/Wavelength.h"
 
-Spectrum::MyClass() {
+Spectrum::Spectrum() {}
 
+std::vector<std::pair<double, double>> Spectrum::getFrequencyRanges() const {
+    return { {1.0e6, 30.0e6}, {30.0e6, 300.0e6} }; // Example ranges
 }
 
-int Spectrum::getValue() {
-
-}
-
-int Spectrum setValue() {
-
+std::string Spectrum::getBandName(const std::pair<double, double>& range) const {
+    return "Example Band"; // Implement logic to map range to band name
 }

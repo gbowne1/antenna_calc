@@ -25,7 +25,6 @@
 #include <cstddef>
 #include <cmath>
 #include <vector>
-#include <strstream>
 #include <algorithm>
 #include <iterator>
 
@@ -35,13 +34,8 @@
 #include "../include/Frequency.h"
 #include "../include/Wavelength.h"
 
-Frequency::Frequency() {
+Frequency::Frequency(double freq) : frequency(freq) {}
 
-}
-int Frequency::getValue() {
-
-}
-
-int Frequency::setValue() {
-
+double Frequency::getFrequency() const {
+    return frequency;
 }

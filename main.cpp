@@ -1,7 +1,7 @@
 /*
  * This file is part of antenna_calc.
  *
- * <project name> is free software: you can redistribute it and/or modify
+ * antenna_calc is free software: you can redistribute it and/or modify
  * it under the terms of the <license name> as published by
  * the <license organization>, either version <license version> of the License, or
  * (at your option) any later version.
@@ -25,19 +25,18 @@
 #include <cstddef>
 #include <cmath>
 #include <vector>
-#include <strstream>
 #include <algorithm>
 #include <iterator>
 
-#include "./include/Antenna.h"
-#include "./include/Spectrum.h"
-#include "./include/Band.h"
-#include "./include/Frequency.h"
-#include "./include/Wavelength.h"
+#include "include/Antenna.h"
+#include "include/Spectrum.h"
+#include "include/Band.h"
+#include "include/Frequency.h"
+#include "include/Wavelength.h"
 
 int main()
 {
-	double frequency = ; // Frequency
+	double frequency = 1000000000.0; // Frequency
     Antenna antenna(frequency); // Create an object of the Antenna class with a frequency of 1 GHz
     double antennaLength = antenna.getLength(); // Get the antenna length
     std::cout << "Antenna length: " << antennaLength << " meters" << std::endl; // Print the result
