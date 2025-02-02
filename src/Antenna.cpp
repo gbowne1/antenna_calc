@@ -38,16 +38,7 @@ Antenna::Antenna(double frequency) : frequency(frequency) {
     // Constructor implementation
 }
 
-Wavelength::Wavelength
-
-Frequency::Frequency
-
-Spectrum::Spectrum() {
-
-}
-
-Band::Band
-
 double Antenna::getLength() {
     return 3.0; // Example length, replace with your actual formula or logic
 }
+

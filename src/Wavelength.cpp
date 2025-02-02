@@ -25,7 +25,6 @@
 #include <cstddef>
 #include <cmath>
 #include <vector>
-#include <strstream>
 #include <algorithm>
 #include <iterator>
 

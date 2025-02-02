@@ -41,5 +41,9 @@ std::vector<std::pair<double, double>> Spectrum::getFrequencyRanges() const {
 }
 
 std::string Spectrum::getBandName(const std::pair<double, double>& range) const {
-    return "Example Band"; // Implement logic to map range to band name
+    // Example logic based on the range
+    if (range.first >= 1000000000.0 && range.second <= 2000000000.0) {
+        return "L Band";  // Just an example, adjust the ranges and band names as necessary
+    }
+    return "Unknown Band";
 }
