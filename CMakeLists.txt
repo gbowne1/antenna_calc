@@ -1,31 +1,27 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.10)
 
-project(antenna_calc
-    VERSION 1.0
-    HOMEPAGE_URL "https://example.com"
-    DESCRIPTION "Antenna calculation project"
-    LANGUAGES CXX)
+project(antenna_calc VERSION 1.0 LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 11)
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_BUILD_TYPE Debug)
 
-# Point to MinGW compiler (adjust path as necessary for your MinGW installation)
-set(CMAKE_CXX_COMPILER "C:/msys64/mingw64/bin/g++.exe")
+# Include directories
+include_directories(${PROJECT_SOURCE_DIR}/include)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic")
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/Debug)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR}/Release)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
+# Add the executable
 add_executable(antenna_calc
+    main.cpp
     src/Antenna.cpp
     src/Band.cpp
-    src/Frequency.cpp
     src/Spectrum.cpp
+    src/Frequency.cpp
     src/Wavelength.cpp
-    main.cpp)
+    src/Utility.cpp
+)
 
-enable_testing()
-include(CTest)
+# Target properties
+target_include_directories(antenna_calc PRIVATE include)
+
+# Install target (optional)
+install(TARGETS antenna_calc DESTINATION bin)
