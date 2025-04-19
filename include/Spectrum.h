@@ -1,6 +1,11 @@
 #ifndef SPECTRUM_H
 #define SPECTRUM_H
 
+#include <vector>
+#include <utility>
+#include <string>
+
+// Spectrum class for managing and retrieving frequency ranges for bands
 class Spectrum {
 public:
     Spectrum();

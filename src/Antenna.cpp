@@ -9,6 +9,12 @@ Antenna::Antenna(double frequency, const std::string &bandType)
     validateInputs(); // Validate inputs upon initialization
 }
 
+double Antenna::getLength() const
+{
+    // Default to half-wave for now
+    return getHalfWaveLength() * 0.3048; // feet to meters
+}
+
 // Get half-wave length
 double Antenna::getHalfWaveLength() const
 {

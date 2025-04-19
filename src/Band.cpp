@@ -1,46 +1,21 @@
-/*
- * This file is part of antenna_calc.
- *
- * <project name> is free software: you can redistribute it and/or modify
- * it under the terms of the <license name> as published by
- * the <license organization>, either version <license version> of the License, or
- * (at your option) any later version.
- *
- * <project name> is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * <license name> for more details.
- *
- * You should have received a copy of the LICENSE or LICENSE.md
- * along with antenna_calc.  If not, see <license URL>.
-*/
-
-#include <string>
-#include <sstream>
-#include <iostream>
-#include <iomanip>
-#include <fstream>
-#include <cstdlib>
-#include <cstring>
-#include <cstddef>
-#include <cmath>
-#include <vector>
-#include <algorithm>
-#include <iterator>
-
-#include "../include/Antenna.h"
-#include "../include/Spectrum.h"
 #include "../include/Band.h"
-#include "../include/Frequency.h"
-#include "../include/Wavelength.h"
 
-Band::Band(const std::string& name) : name(name) {}
+Band::Band(const std::string &name) : name(name) {}
 
-std::pair<double, double> Band::getFrequencyRange() const {
-    // Return frequency range for the band
-    return { 1.0e6, 30.0e6 }; // Example range
+std::pair<double, double> Band::getFrequencyRange() const
+{
+    // Return frequency range for the band (adjust accordingly)
+    if (name == "HF")
+    {
+        return {1.8e6, 30.0e6}; // HF range: 1.8 MHz to 30 MHz
+    }
+    else
+    {
+        return {0.0, 0.0}; // Unknown band
+    }
 }
 
-std::string Band::getName() const {
+std::string Band::getName() const
+{
     return name;
 }
